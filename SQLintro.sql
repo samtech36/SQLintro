@@ -3,7 +3,7 @@
  -- Copy the following and paste into MySql Workbench
 
 -- find all products 
-SELECT * FROM bestbuy products;
+SELECT * FROM products;
  
 -- find all products that cost $1400
 SELECT * FROM bestbuy.products
@@ -23,7 +23,7 @@ ORDER BY p.price DESC;
  
 -- find all employees who don't have a middle initial
  SELECT * FROM bestbuy.employees
- ORDER BY p.price DESC;
+ WHERE MiddleInitial IS NULL;
  
 -- find distinct product prices
 SELECT DISTINCT bestbuy.products.price
